@@ -42,14 +42,13 @@ const num_element_slider = items.length;
 
 const slider = document.getElementById('img_slider')
 
-let selected = 1;
+let selected = 0;
 function succ() {
     selected++;
     if (selected > num_element_slider) {
-        selected = 1
+        selected = 0
     }
-    console.log(selected);
-
+    console.log(items[selected])
 }
 
 
@@ -58,7 +57,7 @@ function prec() {
     if (selected == 0) {
         selected = num_element_slider
     }
-    console.log(selected);
+    console.log(items[selected])
 
 }
 
