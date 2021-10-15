@@ -37,27 +37,4 @@ const text = [
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
-/* /array */
-const num_element_slider = items.length;
-
-const slider = document.getElementById('img_slider')
-
-let selected = 0;
-function succ() {
-    selected++;
-    if (selected > num_element_slider) {
-        selected = 0
-    }
-    console.log(items[selected])
-}
-
-
-function prec() {
-    selected--;
-    if (selected == 0) {
-        selected = num_element_slider
-    }
-    console.log(items[selected])
-
-}
-
+//
