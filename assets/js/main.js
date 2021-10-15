@@ -12,4 +12,23 @@ costruiamo del carosello una versione statica contenente un'immagine grande con 
 scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 Al momento giusto(ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"
  */
+const num_element_slider = 5;
+let selected = 1;
+function succ() {
+    selected++;
+    if (selected > num_element_slider) {
+        selected = 1
+    }
+    console.log(selected);
 
+}
+
+
+function prec() {
+    selected--;
+    if (selected == 0) {
+        selected = num_element_slider
+    }
+    console.log(selected);
+
+}
