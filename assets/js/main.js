@@ -12,7 +12,36 @@ costruiamo del carosello una versione statica contenente un'immagine grande con 
 scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 Al momento giusto(ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"
  */
-const num_element_slider = 5;
+
+/* array */
+const items = [
+    'img/01.jpg',
+    'img/02.jpg',
+    'img/03.jpg',
+    'img/04.jpg',
+    'img/05.jpg'
+];
+
+const title = [
+    'Svezia',
+    'Svizzera',
+    'Gran Bretagna',
+    'Germania',
+    'Paradise'
+]
+
+const text = [
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
+    'Lorem ipsum',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+]
+/* /array */
+const num_element_slider = items.length;
+
+const slider = document.getElementById('img_slider')
+
 let selected = 1;
 function succ() {
     selected++;
@@ -32,3 +61,4 @@ function prec() {
     console.log(selected);
 
 }
+
