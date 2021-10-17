@@ -1,6 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+.clearfix::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+body{
+
+    background-color: rgb(51, 50, 50);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.slider{
+    float: left;
+}
+.slider img{
+    width: 500px;
+    height: 300px;
+}
+.thumbs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 125px;
+    background-color: rgb(0, 0, 0);
+}
+.image_slider_control{
+    width: 100px;
+    height: calc(300px / 5);
+}
+.click{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 1px 5px;
+    font-size: 12px;
+    z-index: 10;
+    border: none;
+}
+.prec.click{
+    margin-top: 5px;
+}
+.click_down{
+    transform: translateY(273px);
+}
+.thumb{
+    height: calc(300px / 5);
+    width: 100%;
+    opacity: 0.3;
+}
+.thumb img {
+    height: 60px;
+    width: 100%;
+}
+.item{
+    display: none;
+    position: relative;
+}
+.text{
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align: right;
+}
+h3{
+    font-size: 15px;
+}
+.item.active{
+    display: block;
+}
+.thumb.active{
+    opacity: 1;
+}
+.click:active{
+    border: 2px solid white;
+    color: white;
+}
